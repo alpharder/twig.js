@@ -2,7 +2,7 @@
   "author": "John Roepke <john@justjohn.us> (http://john.sh/)",
   "name": "twig",
   "description": "JS port of the Twig templating language.",
-  "version": "1.15.3",
+  "version": "1.15.4",
   "homepage": "https://github.com/twigjs/twig.js",
   "license": "BSD-2-Clause",
   "licenses": [
@@ -23,6 +23,7 @@
     "twigjs": "./bin/twigjs"
   },
   "scripts": {
+    "prepare": "npm run build",
     "preversion": "npm test && git diff --exit-code --quiet",
     "postversion": "git push origin master && git push origin master --tags",
     "pretest": "npm run build",
